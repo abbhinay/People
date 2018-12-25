@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420045382261",
+    "firebase_url": "https://people-dce75.firebaseio.com",
+    "project_id": "people-dce75",
+    "storage_bucket": "people-dce75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420045382261:android:d639d378824bdaf2",
+        "android_client_info": {
+          "package_name": "com.abhinay.people"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420045382261-m0p8e6le6pnn14njrm58kntvhiduc1io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPMi2nZMbh2PWDoUJz1FHoglHm7DnDrdM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
