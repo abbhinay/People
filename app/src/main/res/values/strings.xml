@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">People</string>
     <string name="signUpButtonText">Sign Up</string>
+    <string name="signUpButton">SignUp</string>
+    <string name="signInButton">SignIn</string>
+    <string name="passwordHint">Password</string>
+    <string name="emailIdHint">Email</string>
+    <string name="username">Username</string>
 </resources>
