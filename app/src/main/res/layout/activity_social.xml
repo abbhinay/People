@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".socialActivity">
 
+    <ListView
+        android:id="@+id/socialList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="development"
+            app:srcCompat="@drawable/pencil"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/chatButton"
+            android:layout_width="wrap_content"
+            android:onClick="goToChat"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/noticeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:onClick="development"
+            app:srcCompat="@drawable/notice"
+            android:background="@color/white"/>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

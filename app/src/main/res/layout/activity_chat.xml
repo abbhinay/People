@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatActivity">
+
+    <LinearLayout
+        android:id="@+id/chatMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="@string/message"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:maxLines="1"
+            android:gravity="center_horizontal"/>
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:padding="10dp"
+            android:onClick="sendMessage"
+            android:background="@drawable/circle_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="368dp"
+        android:layout_height="499dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
