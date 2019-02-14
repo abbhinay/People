@@ -6,10 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".chatActivity">
 
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="368dp"
+        android:layout_height="600dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/chatMessageContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/chatList"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -39,11 +48,4 @@
 
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/chatList"
-        android:layout_width="368dp"
-        android:layout_height="510dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

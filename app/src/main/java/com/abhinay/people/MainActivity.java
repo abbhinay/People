@@ -1,6 +1,7 @@
 package com.abhinay.people;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         m_emailField = findViewById(R.id.emailIdField);
         m_passwordField = findViewById(R.id.signInPasswordField);
 
+        setUpDisplayFields();
+
 //        m_passwordField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 //            @Override
 //            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -48,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+    }
+
+    public void setUpDisplayFields(){
+        SharedPreferences prefs = getSharedPreferences(signUpActivity.CHAT_PREFS, MODE_PRIVATE);
+        String emailId = prefs.getString(signUpActivity.DISPLAY_EMAIL_KEY, null);
+        String password = prefs.getString(signUpActivity.DISPLAY_PASSWORD_KEY, null);
+
+        m_emailField.setText(emailId);
+        m_passwordField.setText(password);
     }
 
     public void signInExistingUser(View v){

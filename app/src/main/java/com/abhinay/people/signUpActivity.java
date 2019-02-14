@@ -24,6 +24,8 @@ public class signUpActivity extends AppCompatActivity {
 
     static final String CHAT_PREFS = "ChatPrefs";
     static final String DISPLAY_NAME_KEY = "username";
+    static final String DISPLAY_EMAIL_KEY = "emailId";
+    static final String DISPLAY_PASSWORD_KEY = "password";
 
     private AutoCompleteTextView m_signUp_username;
     private AutoCompleteTextView m_signUp_emailId;
@@ -135,8 +137,12 @@ public class signUpActivity extends AppCompatActivity {
 
     private void saveDisplayName() {
         String displayName = m_signUp_username.getText().toString();
+        String emailId = m_signUp_emailId.getText().toString();
+        String password = m_signUp_password.getText().toString();
         SharedPreferences prefs = getSharedPreferences(CHAT_PREFS, 0);
         prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
+        prefs.edit().putString(DISPLAY_EMAIL_KEY, emailId).apply();
+        prefs.edit().putString(DISPLAY_PASSWORD_KEY, password).apply();
     }
 
     private void showErrorDialog(String message){
