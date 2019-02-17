@@ -7,13 +7,9 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.AutoCompleteTextView;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -79,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
         String email = m_emailField.getText().toString();
         String password = m_passwordField.getText().toString();
 
+        SharedPreferences prefs = getSharedPreferences("ChatPrefs", 0);
+        //prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
+        prefs.edit().putString("emailId", email).apply();
+        prefs.edit().putString("password", password).apply();
+
         if(email.equals("") || password.equals("")) return;
         Toast.makeText(this, "Login in progress...", Toast.LENGTH_SHORT).show();
 
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("FlashChat", "Problem signing in: " + task.getException());
                     showErrorDialog("There was a problem signing in");
                 } else {
-                    Intent intent = new Intent(MainActivity.this, socialActivity.class);
+                    Intent intent = new Intent(MainActivity.this, homeActivity.class);
                     finish();
                     startActivity(intent);
                 }

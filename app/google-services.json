@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "420045382261-th87iida43r1cqvre5d1d51oe03rju84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abhinay.people",
+            "certificate_hash": "725bad89bc2e2e10bc01ad3322aa7dca40c77b1f"
+          }
+        },
+        {
           "client_id": "420045382261-m0p8e6le6pnn14njrm58kntvhiduc1io.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420045382261-m0p8e6le6pnn14njrm58kntvhiduc1io.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

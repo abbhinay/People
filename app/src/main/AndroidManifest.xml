@@ -3,6 +3,7 @@
     package="com.abhinay.people">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,9 +25,10 @@
             android:name=".signUpActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".socialActivity"
+            android:name=".homeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".chatActivity"></activity>
+        <activity android:name=".chatActivity" />
+        <activity android:name=".document"></activity>
     </application>
 
 </manifest>

@@ -6,18 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class socialActivity extends AppCompatActivity {
+public class homeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_social);
+        setContentView(R.layout.activity_home);
     }
 
     public void goToChat(View v){
-        Intent myIntent = new Intent(socialActivity.this, chatActivity.class);
+        Intent chatIntent = new Intent(homeActivity.this, chatActivity.class);
         finish();
-        startActivity(myIntent);
+        startActivity(chatIntent);
+    }
+
+    public void goToDocument(View v){
+        Intent docIntent = new Intent(homeActivity.this, document.class);
+        finish();
+        startActivity(docIntent);
     }
 
     public void development(View v){
