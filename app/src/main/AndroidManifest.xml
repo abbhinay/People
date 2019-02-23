@@ -28,7 +28,7 @@
             android:name=".homeActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".chatActivity" />
-        <activity android:name=".document"></activity>
+        <activity android:name=".document" />
     </application>
 
 </manifest>

@@ -103,48 +103,6 @@ public class document extends AppCompatActivity {
                     }
                 });
 
-
-
-
-
-
-
-//        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-//
-//        databaseReference.addChildEventListener(new ChildEventListener() {
-//            @Override
-//            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//                String fileName = dataSnapshot.getKey();
-//                String url = dataSnapshot.getValue(String.class);
-//                ((MyAdapter)recyclerView.getAdapter()).update(fileName, url);
-//            }
-//
-//            @Override
-//            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//
-//            }
-//
-//            @Override
-//            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
-
-
-
-
-
-
         storage = FirebaseStorage.getInstance();
         database = FirebaseDatabase.getInstance();
 
