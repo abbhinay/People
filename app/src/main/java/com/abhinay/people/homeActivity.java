@@ -208,6 +208,7 @@ public class homeActivity extends AppCompatActivity {
 //                Log.d("issue", issue);
                     bunkMessageViewer.setText(issue);
                     Toast.makeText(homeActivity.this, "to really upload the issue cast your vote by selecting one of the radio buttons", Toast.LENGTH_SHORT).show();
+                    bunkInfoContainer.setVisibility(View.VISIBLE);
                 }
             });
             builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -218,6 +219,8 @@ public class homeActivity extends AppCompatActivity {
             });
 
             builder.show();
+
+
 
         }
         else{
