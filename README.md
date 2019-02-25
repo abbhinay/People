@@ -1,4 +1,5 @@
 # People
+[![Preview the app](https://img.shields.io/badge/Preview-Appetize.io-orange.svg)](https://appetize.io/app/zdq2fq3kbwhhh4dap527gfxjnw)
 
 ## Quick Insight
 An Android application that serves as a platform where students of one class can share important documents, class notes. The app also has a group chat feature where students can discuss about the class activities. The app also serve as a platform where all the students can vote for the bunk. <br>
