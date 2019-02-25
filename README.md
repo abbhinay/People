@@ -3,7 +3,7 @@
 ## Quick Insight
 An Android application that serves as a platform where students of one class can share important documents, class notes. The app also has a group chat feature where students can discuss about the class activities. The app also serve as a platform where all the students can vote for the bunk. <br>
 
-## Work-Flow
+## Features
 - A Login Activity to ensure only Authentic Users use the app - Implemented using Firebase Authentication.<br>
 - On clicking SignUp button on Login Activity takes the user to another user where they can create a new account.<br>
 - Any user can create a new issue for the bunk and can vote for the issue that is already been posted by other user.<br>
