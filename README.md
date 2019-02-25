@@ -19,3 +19,7 @@ An Android application that serves as a platform where students of one class can
 | Document_Sharing_Activity                                                       | Group_Chat_Activity                                                  |
 | ------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | <img src="screenshots/documentSharingActivity.jpeg" width="280" height="500" /> | <img src="screenshots/chatActivity.jpeg" width="280" height="500" /> |
+
+## Developer
+The project is developed by
+- Abhinay Kumar ([@abbhinay](https://github.com/abbhinay))
