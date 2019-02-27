@@ -33,16 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
         setUpDisplayFields();
 
-//        m_passwordField.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-//                if (id == R.id.login || id == EditorInfo.IME_NULL) {
-//                    attemptLogin();
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
         Log.d("people", "inside on create");
 
         mAuth = FirebaseAuth.getInstance();
@@ -76,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
         String password = m_passwordField.getText().toString();
 
         SharedPreferences prefs = getSharedPreferences("ChatPrefs", 0);
-        //prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
         prefs.edit().putString("emailId", email).apply();
         prefs.edit().putString("password", password).apply();
 

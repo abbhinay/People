@@ -45,17 +45,6 @@ public class signUpActivity extends AppCompatActivity {
         m_signUp_password = (EditText) findViewById(R.id.signUp_password);
         m_signUp_confirm_password = (EditText) findViewById(R.id.signUp_confirm_password);
 
-//        m_signUp_confirm_password.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-//            @Override
-//            public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
-//                if (id == R.id.register_form_finished || id == EditorInfo.IME_NULL) {
-//                    attemptRegistration();
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
-
         mAuth = FirebaseAuth.getInstance();
     }
 
